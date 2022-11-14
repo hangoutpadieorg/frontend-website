@@ -1,0 +1,120 @@
+body {
+    background: #FFFDF5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 120px;
+    font-size: 18px;
+}
+
+section {
+    height: 1241px;
+}
+
+.header--logo {
+    width: 271px;
+}
+
+.header--links {
+    display: flex;
+    align-items: center;
+}
+
+.header--links li {
+    margin-right: 40px;
+    color: #424242;
+    font-size: 18px;
+}
+
+.header--links button {
+    padding: 18px 32px;
+    background: #FFFDF5;
+    color: #FE8E4F;
+    border: 1px solid #FE8E4F;
+    border-radius: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 373px 1067px
+    
+}
+
+aside {
+    padding: 100px 51px;
+    background: #FFFDF5;
+    border:  1px solid #DCDCDC;
+}
+
+aside button {
+    padding: 26px 28px;
+    color: #F6F6F6;
+    background: #FA6F2D;
+    border: none;
+    border-radius: 12px;
+    width: 271px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.aside {
+    align-items: center;
+}
+
+.aside--links {
+    margin-bottom: 62px;
+    font-size: 24px;
+    color: #656565;
+}
+
+main {
+    background: #FAFAF3;
+    padding: 64px 48px;
+    border: 1px solid #DCDCDC;
+}
+
+.profile--card {
+    background: #FFFDFB;
+    display: flex;
+    justify-content: space-between;
+    max-width: 767px;
+    padding: 48px 56px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 7px rgba(117, 117, 117, 0.18);
+}
+
+.profile--card button {
+    padding: 18px 32px;
+    background: #FFFDFB;
+    color: #858585;
+    border: 1px solid #858585;
+    border-radius: 8px;
+    align-items: flex-start;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fa-pen-to-square,
+.fa-circle-user {
+    margin-right: 20px;
+    width: 16px;
+}
+
+.fa-user {
+    margin-right: 10px;
+}
+
+.fa-calendar-days,
+.fa-location-dot,
+.fa-clipboard {
+    margin-right: 19px;
+    width: 18px;
+}
