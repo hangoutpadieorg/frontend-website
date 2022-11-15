@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav--bar {
+    display: flex;
+    gap: 405px;
+}
+
+.nav--bar ul {
+    display: flex;
+}
+
+.nav--bar li {
+    margin-right: 30px;
+}
+
+.nav--links {
+    display: flex;
+    align-items: center;
+}
+
+.nav--links button {
+    padding: 14px 24px;
+    background: #FFFDF5;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    border: none;
+}
+
+.header--hero--search ul {
+    margin: 0;
+    display: flex;
+}
+
+.header--hero--search li {
+    margin-right: 56px;
+}
+
+.search--bar input {
+    width: 498px;
+    padding: 12px;
+    background: #F5F5F5;
+    border-radius: 8.01274px;
+    border: none;
+}
+
+.search--bar button {
+    background: linear-gradient(95.71deg, #FF5403 -39.64%, #F75900 135.31%);
+    border-radius: 8px;
+    padding: 21px 48px;
+    border: none;
+}
+
+.header--hero--search {
+    width: 857px;
+    height: 172px;
+    background: #FFFDF5;
+    padding: 34px 48px;
+    border-radius: 12px;
+}
+
+.places--search {
+    margin-bottom: 35px;
+}
+
+.places--search:hover {
+    padding: 10px 24px;
+    background: rgba(241, 114, 40, 0.1);
+    border-radius: 8.01274px;
+    color: #FFAE00;
+}
+
+.header--search {
+    width: 1512px;
+    height: 560px;
+    display: flex;
+    background: linear-gradient(180deg, #FFCA03 0%, #F95701 100%);
+    padding-top: 72px;
+    padding-left: 121px;
+}
+
+.header--search h1 {
+    color: #FFFDF5;
+    text-shadow: 0px 14.0223px 15.0239px rgba(255, 174, 0, 0.01), 0px 27.043px 82.1306px rgba(255, 174, 0, 0.28);
+    font-size: 88px;
+}
+
+.header--search p {
+    color: #504F4F;
+    margin-bottom: 32px;
+}
+
+.how--to--section {
+    width: 80%;
+    margin: 62px auto;
+}
+
+.how--to {
+    display: flex;
+    gap: 32px;
+    text-align: center;
+}
+
+.how--to--section h3{
+    text-align: center;
+    color: #F17228;
+    font-size: 43px;
+}
+
+.how--to--desc {
+    max-width: 307px;
+    color: #434343;
+}
+
+.how--to--desc p {
+    color: #9E9E9E;
+}
+
+.card {
+    display: flex;
+    width: 80%;
+    margin: 48px auto;
+}
+
+.hangout--spot--section h3 {
+    text-align: center;
+    font-size: 43px;
+    color: #000000;
+}
+
+.card-desc {
+    display: flex;
+    flex-direction: column;
+    margin-right: 19px;
+}
+
+.card-desc h5 {
+    margin: 0;
+    margin-top: 12px;
+    color: #424242;
+}
+
+.card-desc p {
+    color: #FFB30E;
+}
+
+.hng-spt-img {
+    width: 303px;
+    border-radius: 14px;
+}
+
+.card-desc button {
+    width: 303px;
+    background: #F17228;
+    padding: 18px 42px;
+    box-shadow: 0px 4px 8px rgba(253, 114, 92, 0.22), 0px 17px 35px rgba(250, 99, 35, 0.24);
+    border-radius: 7px;
+    border: none;
+    margin-top: 29px;
+    color: #FFFFFF;
+}
