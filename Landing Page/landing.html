@@ -7,6 +7,7 @@
     <title>Hangout Padie</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Style/landing.css">
+    <!-- <script src="../Script/hgp.js" defer></script> -->
 </head>
 <body>
     <header>
@@ -16,13 +17,31 @@
             </div>
             <div class="nav--links">
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Events</li>
-                    <li>Categories</li>
-                    <li>Sign up</li>
+                    <li><a href="#" class="nav--link--act">Home</a></li>
+                    <li><a href="#" class="nav--link--act">About Us</a></li>
+                    <li><a href="#" class="nav--link--act">Events</a></li>
+                    <li><a href="#" class="nav--link--act">Categories</a></li>
+                    <li class="supBtn"">
+                        <a href="#" class="nav--link--act" id="supBtn">Sign up</a>
+                        <div id="signupModal" class="sgn--modal">
+                            <!-- Modal content -->
+                            <div class="modal--content">
+                                <a href="../Register/signup.html" class="modal--content--link">Sign up as User</a>
+                                <a href="" class="modal--content--link">Sign up as Vendor</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lgnBtn">
+                        <a href="#" class="nav--link--act" id="lgnBtn">Login</a>
+                        <div id="loginModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal--content">
+                                <a href="../Login/login.html" class="modal--content--link">Log In as User</a>
+                                <a href="" class="modal--content--link">Log In as Vendor</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-                <button>Login</button>
             </div>
         </nav>
         <div class="header--search">
@@ -423,46 +442,54 @@
     <footer>
         <div class="footer-top">
             <img src="../Images/Footer.png" alt="">
+            <div class="footer-top-text">
+                <h4>Are you ready to hangout and connect?</h4>
+                <button>BOOK NOW</button>
+            </div>
         </div>
         <div class="footer">
             <div>
-                <h4>Our top cities</h4>
-                <div class="footer--inner--top">
-                    <ul>
-                        <li>Abuja</li>
-                        <li>Lafia</li>
-                        <li>Lokoja</li>
-                        <li>Minna</li>
-                        <li>Ilorin</li>
-                    </ul>
-                    <ul>
-                        <li>Lagos</li>
-                        <li>Ibadan</li>
-                        <li>Akure</li>
-                        <li>Oshogbo</li>
-                        <li>Abeokuta</li>
-                    </ul>
-                    <ul>
-                        <li>Port Harcout City</li>
-                        <li>Asaba</li>
-                        <li>Benin</li>
-                        <li>Bayelsa</li>
-                        <li>Uyo</li>
-                    </ul>
-                    <ul>
-                        <li>Calabar</li>
-                        <li>Enugu</li>
-                        <li>Akwa</li>
-                        <li>Abia</li>
-                        <li>Owerri</li>
-                    </ul>
-                    <ul>
-                        <li>Keffi</li>
-                        <li>Bauchi</li>
-                        <li>Kano</li>
-                        <li>Kaduna</li>
-                        <li>Kebbi</li>
-                    </ul>
+                <div>
+                    <div>
+                        <h4 class="tp--cts">Our top cities</h4>
+                        <div class="footer--inner--top">
+                            <ul>
+                                <li>Abuja</li>
+                                <li>Lafia</li>
+                                <li>Lokoja</li>
+                                <li>Minna</li>
+                                <li>Ilorin</li>
+                            </ul>
+                            <ul>
+                                <li>Lagos</li>
+                                <li>Ibadan</li>
+                                <li>Akure</li>
+                                <li>Oshogbo</li>
+                                <li>Abeokuta</li>
+                            </ul>
+                            <ul>
+                                <li>Port Harcout City</li>
+                                <li>Asaba</li>
+                                <li>Benin</li>
+                                <li>Bayelsa</li>
+                                <li>Uyo</li>
+                            </ul>
+                            <ul>
+                                <li>Calabar</li>
+                                <li>Enugu</li>
+                                <li>Akwa</li>
+                                <li>Abia</li>
+                                <li>Owerri</li>
+                            </ul>
+                            <ul>
+                                <li>Keffi</li>
+                                <li>Bauchi</li>
+                                <li>Kano</li>
+                                <li>Kaduna</li>
+                                <li>Kebbi</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <div class="footer--inner--top">
@@ -494,7 +521,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div class="socials">
                             <div>
                                 <h4>Follow Us</h4>
                             </div>

@@ -8,6 +8,10 @@ body {
     width: 1512px;
     margin: 0 auto;
 }
+a {
+    text-decoration: none;
+    color: #000000;
+}
 
 h1, h2  {
     margin: 0;
@@ -37,13 +41,16 @@ ul {
     align-items: center;
 }
 
-.nav--links button {
+.nav--link--act {
+    transition: all .1s ease-in-out;
+}
+
+.nav--link--act:hover {
     padding: 14px 24px;
     background: #FFFDF5;
+    color: #FFB800;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    border: none;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
@@ -241,9 +248,8 @@ header {
     display: flex;
     gap: 117px;
     justify-content: center;
-    background: #FEEFD0;
-    clip-path: circle(40%);
-
+    background: url('../Images/bkgrd.png');
+    background-repeat: no-repeat;
 }
 
 .app--dwn--txt {
@@ -317,8 +323,30 @@ header {
 }
 
 .footer-top {
+    display: flex;
+    color: #FFF;
+    font-size: 44px;
     background: url('../Images/footer-img.png');
     background-repeat: no-repeat;
+}
+
+.footer-top-text {
+    text-align: center;
+    margin-left: 50px;
+    max-width: 547px;
+}
+
+.footer-top-text h4 {
+    margin-bottom: 45px;
+}
+
+.footer-top-text button {
+    padding: 16px 37px;
+    background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+    box-shadow: 0px 3px 6px rgba(222, 151, 0, 0.24), 0px 11px 25px rgba(255, 178, 14, 0.29);
+    border-radius: 6px;
+    border: none;
+    color: #FFF;
 }
 
 footer {
@@ -343,6 +371,11 @@ footer {
 .footer--legal {
     display: flex;
     gap: 100px;
+    margin-top: 50px;
+}
+
+.socials {
+    margin-top: 50px;
 }
 
 .footer--inner--top button {
@@ -366,4 +399,64 @@ footer {
     color: #F5F5F5;
     font-size: 12px;
     padding-bottom: 91px;
+}
+
+.tp--cts {
+    color: #F5F5F5;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+/* The Modal (background) */
+.modal {
+    position: fixed; 
+    z-index: 1; 
+    right: 155px;
+    top: 60px;
+    width: 15%; 
+    height: 18%; 
+    overflow: auto;
+    background-color: #FFFDF5;
+    padding: 10px;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.sgn--modal {
+    position: fixed; 
+    z-index: 1; 
+    right: 236px;
+    top: 60px;
+    width: 15%; 
+    height: 18%; 
+    overflow: auto;
+    background-color: #FFFDF5;
+    padding: 10px;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.lgnBtn:hover>.modal {
+    visibility: visible;
+}
+
+.supBtn:hover>.sgn--modal {
+    visibility: visible;
+}
+
+.modal--content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal--content:hover {
+    cursor: pointer;
+}
+
+.modal--content--link {
+    padding: 18px;
+}
+
+.modal--content--link:hover {
+    background-color: rgba(241, 114, 40, 0.15);
 }
