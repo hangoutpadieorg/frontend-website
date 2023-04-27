@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Medium.ttf');
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+/* <Navbar> */
+.navbar--main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+.nav--links ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav--items {
+  display: flex;
+  align-items: center;
+  padding: .8rem 1.3rem;
+  transition: all ease-in-out .2s;
+}
+
+.nav--login:hover {
+  border: 0;
+  border-radius: .6rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav--items:hover {
+  color: #ff5403;
+}
+
+.nav--login {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.nav--userLogo {
+  height: .9rem;
+}
+
+/* </Navbar> */
+
+/* <Hero> */
+
+.hero--main {
+  background: linear-gradient(to bottom, #ffbf03, #ffaa00, #ff9400, #fd7d00, #fa6402);
+  /* height: 20rem; */
+}
