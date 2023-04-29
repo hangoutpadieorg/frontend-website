@@ -34,16 +34,16 @@ body {
   height: 3.5rem;
 }
 
-.nav--links ul {
+.nav--links--main ul {
   display: flex;
   gap: 1rem;
 }
 
-.nav--items {
+.link{
   display: flex;
   align-items: center;
   padding: .8rem 1.3rem;
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out .1s;
 }
 
 .nav--login:hover {
@@ -52,11 +52,12 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.nav--items:hover {
+.link:hover {
   color: #ff5403;
 }
 
 .nav--login {
+  position: relative;
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -64,6 +65,36 @@ body {
 
 .nav--userLogo {
   height: .9rem;
+}
+
+.nav--login--hidden {
+  position: absolute;
+  transition: all 0s ease 1s; /*delay 1s*/
+  visibility: hidden;
+
+  /* z-index: 1; */
+  right: 0;
+  bottom: -10rem;
+  background: #fff;
+  width: 15rem;
+  padding: 1rem;
+  border-radius: .6rem;
+}
+
+.nav--login--user,
+.nav--login--vendor {
+  padding: 1rem 2rem;
+}
+
+.nav--login--user:hover,
+.nav--login--vendor:hover {
+  background: #fde8d6;
+  border-radius: .2rem;
+}
+
+.nav--login:hover > .nav--login--hidden {
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 /* </Navbar> */

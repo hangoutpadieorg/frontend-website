@@ -7,33 +7,41 @@ const Navbar = () => {
     <header>
       <nav className='navbar--main'>
         <img className='logo' src={Logo} />
-        <div className='nav--links'>
+        <div className='nav--links--main'>
           <ul>
-            <a href='#'>
-              <li className='nav--items'>Home</li>
-            </a>
-            <a href='#'>
-              <li className='nav--items'>About Us</li>
-            </a>
-            <a href='#'>
-              <li className='nav--items'>Events</li>
-            </a>
-            <a href='#'>
-              <li className='nav--items'>Categories</li>
-            </a>
-            <a href='#'>
-              <li className='nav--items'>Sign Up</li>
-            </a>
-            <a href='#'>
-              <div className='nav--items nav--login'>
-                <img className='nav--userLogo' src={User} />
-                <p>Login</p>
-              </div>
-            </a>
+            <li className='nav--items'><a href='#' className='link'>Home</a></li>
+            <li className='nav--items'><a href='#' className='link'>About Us</a></li>
+            <li className='nav--items'><a href='#' className='link'>Events</a></li>
+            <li className='nav--items'><a href='#' className='link'>Categories</a></li>
+            <NavButton 
+              btnText = "Signup"
+              user = "Signup as user"
+              vendor = "Signup as vendor"
+            />
+            <NavButton 
+              img = {User}
+              btnText = "Login"
+              user = "Login as user"
+              vendor = "Login as vendor"
+            />
           </ul>
         </div>
       </nav>
     </header>
+  )
+}
+
+const NavButton = (props) => {
+  return (
+    <div className='nav--items link nav--login'>
+      <img className='nav--userLogo' src={props.img} />
+      <p>{props.btnText}</p>
+
+      <div className='nav--login--hidden' id='xx'>
+        <a href='#'><p className='nav--login--user'>{props.user}</p></a>
+        <a href='#'><p className='nav--login--vendor'>{props.vendor}</p></a>
+      </div>
+    </div>
   )
 }
 
