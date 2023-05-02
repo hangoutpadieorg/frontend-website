@@ -10,8 +10,8 @@ const Hero = () => {
         <h1 className='hero--title'>Love to hangout?</h1>
         <p className='hero--text'>Find hangout locations that are accessible near you</p>
 
-        <div>
-          <ul>
+        <div className='location--container'>
+          <ul className='hangout--category'>
             <li>Lounge</li>
             <li>Bar</li>
             <li>Cafe</li>
@@ -20,20 +20,20 @@ const Hero = () => {
             <li>Garden/Park</li>
           </ul>
 
-          <div>
-            <div>
-              <img src={RedLocator} />
-              <input type='text'></input>
+          <div className='hero--inputbar'>
+            <div className='search--location'>
+              <img className='red--location-icon' src={RedLocator} />
+              <input type='text' placeholder='Enter your location'></input>
             </div>
-            <button>
+            <button className='search--button'>
               <img src={Search} />
               <p>Find a hangout location</p>
             </button>
           </div>
         </div>
       </div>
-      <div>
-        <img src={HeroImage} />
+      <div className='hero--image--container'>
+        <img className='hero--image' src={HeroImage} />
       </div>
     </section>
   )

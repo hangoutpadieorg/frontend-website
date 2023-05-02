@@ -74,12 +74,11 @@ body {
 
 .nav--login--hidden {
   position: absolute;
-  transition: all 0s ease 1s; /*delay 1s*/
   visibility: hidden;
 
   /* z-index: 1; */
   right: 0;
-  bottom: -10rem;
+  bottom: -8.5rem;
   background: #fff;
   width: 15rem;
   padding: 1rem;
@@ -99,7 +98,6 @@ body {
 
 .nav--login:hover > .nav--login--hidden {
   visibility: visible;
-  transition-delay: 0s;
 }
 
 /* </Navbar> */
@@ -116,7 +114,8 @@ body {
 }
 
 .hero--locator {
-  padding: 0 0 0 5rem;
+  padding: 4rem 0 0 5rem;
+  width: 65%;
 }
 
 .hero--title {
@@ -130,4 +129,102 @@ body {
   font-size: 1.2rem;
   padding-left: .3rem;
   color: #504f4f;
+}
+
+.location--container {
+  width: 90%;
+  margin-top: 4rem;
+  background: #fff;
+  border: none;
+  border-radius: .8rem;
+  
+  color: #504f4f;
+}
+
+.hangout--category {
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  border-bottom: .2rem solid #f5f5f5;
+}
+
+.hangout--category li{
+  padding: .7rem 1rem;
+  transition: all ease-in-out .2s;
+  cursor: pointer;
+}
+
+.hangout--category li:hover {
+  background: #fdeadf;
+  padding: .7rem 1rem;
+  border-radius: .6rem;
+  color: #ffae00;
+  font-weight: 700;
+}
+
+.hero--inputbar {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search--location {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: .5rem;
+  padding: .6rem 1rem;
+  background: #f5f5f5;
+  border-radius: .6rem;
+}
+
+.red--location-icon {
+  height: 1.5rem;
+}
+
+.search--location input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 1.5rem;
+  background: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Raleway';
+  letter-spacing: .05rem;
+  color: #9e9e9e;
+  padding: .2rem 0 0 0;
+}
+
+.search--button {
+  width: 40%;
+  background: #f95701;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  color: #fff;
+  border: none;
+  border-radius: .6rem;
+  outline: none;
+  padding: 1.2rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Raleway';
+  transition: all ease-in-out .2s;
+  cursor: pointer;
+}
+
+.search--button:hover {
+  background: #ffad00;
+}
+
+.hero--image--container {
+  width: 35%;
+}
+
+.hero--image {
+  width: 100%;
 }
