@@ -1,9 +1,10 @@
 // import React from 'react'
-import HeroImage from './assets/hero-image.png'
-import RedLocator from './assets/location-icon-red.svg'
-import Search from './assets/search.svg'
+import HeroImage from '../assets/hero-image.png'
+import RedLocator from '../assets/location-icon-red.svg'
+import Search from '../assets/search.svg'
 
 const Hero = () => {
+  // console.log(guide)
   return (
     <section className='hero--main'>
       <div className='hero--locator'>

@@ -1,6 +1,6 @@
-import './App.css'
-import Logo from '../src/assets/hangout-logo.svg'
-import User from './assets/user.svg'
+import '../App.css'
+import Logo from '../assets/hangout-logo.svg'
+import User from '../assets/user.svg'
 
 const Navbar = () => {
   return (
