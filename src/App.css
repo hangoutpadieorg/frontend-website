@@ -232,13 +232,6 @@ body {
 
 /* GUIDE STYLING */
 
-/* .guide--main {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2rem 0;
-  display: flex;
-} */
-
 .guide--header {
   text-align: center;
   padding: 4rem 0 2rem 0;
@@ -280,3 +273,154 @@ body {
 }
 
 /* END OF GUIDE STYLING */
+
+/* CATEGORY STYLING */
+
+.category--main {
+  width: 90%;
+  margin: 0 auto 5rem auto;
+}
+
+.category--title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.category--flex {
+  display: flex;
+  /* gap: 1rem; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.category--card {
+  text-align: center;
+}
+
+.category--image {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  padding-bottom: .5rem;
+}
+
+.btn--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: #f95701;
+  border: none;
+  border-radius: .6rem;
+  outline: none;
+  transition: all ease-in-out .2s;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-family: 'Raleway';
+  font-size: .9rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rightArrow {
+  height: .8rem;
+}
+
+.btn:hover {
+  background: #ffb20e;
+}
+
+/* END OF CATEGORY STYLING */
+
+/* INSTALL APP SECTION */
+
+.xamp {
+  height: 39rem;
+  background-color: #ff9c00;
+}
+
+.vector {
+  width: 100%;
+}
+
+.vector--main {
+  position: relative;
+  /* background-image: url("../public/Bg-curve.svg"); */
+}
+
+.vector--absolute {
+  display: flex;
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  position: absolute;
+  top: 5rem;
+  left: 22rem;
+  right: 0;
+  gap: 6rem;
+}
+
+.phone {
+  height: 30rem;
+}
+
+.install--options {
+  width: 50%;
+}
+
+.install--header {
+  font-size: 4rem;
+  color: #ff9701;
+}
+
+.install--text {
+  font-size: 1.2rem;
+  width: 60%;
+  font-weight: 500;
+  color: #918c88;
+  line-height: 1.7rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.install-btn--flex {
+  display: flex;
+  gap: .8rem;
+}
+
+.install--btn {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem .7rem;
+  font-family: 'Raleway';
+  border: none;
+  outline: none;
+  border-radius: .3rem;
+  box-shadow: 0 .2rem .4rem #fed680;
+  cursor: pointer;
+}
+
+.play--icon {
+  height: 2rem;
+}
+
+.btn--text1 {
+  font-size: .7rem;
+  font-weight: 700;
+  color: #504f4f;
+}
+
+.btn--text2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+}
+
+/* END OF INSTALL STYLING */
