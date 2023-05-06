@@ -3,12 +3,10 @@ import RightArrow from '../assets/ArrowRight.svg'
 
 export default function ArrowButton(props) {
   return (
-    <div className='btn--container'>
-      <a href='#'>
-        <button className='btn'>
-          <p>{props.text}</p> <img className='rightArrow' src={RightArrow} />
-        </button>
-      </a>
-    </div>
+    <a href='#'>
+      <button className='btn'>
+        <p>{props.text}</p> <img className='rightArrow' src={RightArrow} />
+      </button>
+    </a>
   )
 }

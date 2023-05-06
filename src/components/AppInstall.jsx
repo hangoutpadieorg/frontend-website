@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Vector from '../../public/Bg-curve.svg'
 import Phone from '../assets/phone.png'
 import Play from '../assets/play-logo.svg'
