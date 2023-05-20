@@ -1,4 +1,7 @@
 import ArrowButton from "./ArrowButton"
+import Cubana_Full from '../assets/Cubana_Full.png'
+import Sea_bar from '../assets/Sea-bar.png'
+import Hard_rock from '../assets/Hard-rock.png'
 // import ReviewImage from '../assets/Cubana_Full.png'
 const ReviewCard = (props) => {
   return(
@@ -41,19 +44,19 @@ const ReviewDiv = () => {
         title = 'Best lounge ever visited...'
         reviewer = 'Anita Sanchez, Lagos'
         description = 'Cubana is an exciting place to be. Situated at the heartbeat of Lagos with cool and serene view...'
-        image = './src/assets/Cubana_Full.png'
+        image = {Cubana_Full}
       />
       <ReviewCardReverse 
         title = 'Celebrate with friends and family with ease...'
         reviewer = 'Olawale, Abuja'
         description = "Enjoy the cool breeze from the Atlantic Ocean as you celebrate with frineds and family at the Sailor's Lounge."
-        image = './src/assets/Sea-bar.png'
+        image = {Sea_bar}
       />
       <ReviewCard 
         title = 'Wanna eat hot & spicy Pizza?'
         reviewer = 'Anon'
         description = 'Pair up with a friend and enjoy the hot and crispy pizza pops at Hard Rock Cafe'
-        image = './src/assets/Hard-rock.png'
+        image = {Hard_rock}
       />
     </div>
   )
