@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ArrowButton from "./ArrowButton"
 import Cubana_Full from '../assets/Cubana_Full.png'
 import Sea_bar from '../assets/Sea-bar.png'

@@ -8,6 +8,8 @@ import Install from './components/AppInstall'
 import ArrowButton from './components/ArrowButton'
 import RightArrow from './assets/ArrowRightOrange.svg'
 import {ReviewDiv} from './components/ReviewCard'
+import HangoutCTA from './components/Hangout-CTA'
+import Footer from './components/Footer'
 
 export default function App() {
 
@@ -62,6 +64,8 @@ export default function App() {
         </div>
         <ReviewDiv />
       </div>
+      <HangoutCTA />
+      <Footer />
     </div>
   )
 }
