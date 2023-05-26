@@ -14,6 +14,10 @@
   src: url('./fonts/Raleway/Raleway-VariableFont_wght.ttf');
 }
 
+ul li a {
+  color: #fff;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -570,11 +574,12 @@ body {
   color: #fff;
 }
 
-.footer--top {
+.footer--top,
+.footer--bottom {
   width: 80%;
   margin: 0 auto;
-  padding-top: 5rem;
-  border-bottom: 1px solid #424242;
+  border-bottom: .2rem solid #424242;
+  padding: 5rem 0 3rem 0;
 }
 
 .top--cities {
@@ -585,13 +590,105 @@ body {
 .cities {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 0 0 3rem 0;
 }
 
-.city--list li {
+.city--list li,
+.footer--links li {
   padding-bottom: .6rem;
   cursor: pointer;
   font-size: .9rem;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.bottom--container {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.footer--options {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  /* width: 70%; */
+}
+
+.footer--title,
+.contact--title {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.offers {
+  margin-bottom: 1.5rem;
+  color: #bbbbbb;
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+.mail-in {
+  display: flex;
+  gap: .6rem;
+}
+
+.form--input {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background: #424242;
+  padding: .6rem;
+  border-radius: .3rem;
+}
+
+.form--input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #bbbbbb;
+  font-weight: 600;
+  font-family: 'Raleway';
+  font-size: .9rem;
+  /* height: 1.8rem; */
+  padding: .2rem 0 ;
+}
+
+.envelope {
+  height: .9rem;
+}
+
+.mail-in--button {
+  background: #ff9700;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: .3rem;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: .9rem;
+  font-family: 'Raleway';
+  transition: all ease-in-out .3s;
+}
+
+.mail-in--button:hover {
+  background: #ff5403;
+}
+
+.copyright {
+  text-align: center;
+  font-size: .9rem;
+  padding: 1rem 0 6rem 0;
+}
+
+.copyright--bold {
+  font-weight: 600;
 }
 
 /* End of footer styling */

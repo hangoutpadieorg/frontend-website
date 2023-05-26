@@ -1,3 +1,11 @@
+import Facebook from "../assets/Facebook.svg"
+import Instagram from "../assets/Instagram.svg"
+import Twitter from "../assets/Twitter.svg"
+import Envelope from "../assets/Envelope.svg"
+
+let getDate = new Date();
+let currentYear = getDate.getFullYear();
+// console.log(currentYear);
 
 const Cities = (props) => {
   return (
@@ -8,6 +16,22 @@ const Cities = (props) => {
       <li>{props.city4}</li>
       <li>{props.city5}</li>
     </ul>
+  )
+}
+
+const FooterOptions = (props) => {
+  return (
+    <div>
+      <h4 className="footer--title">{props.title}</h4>
+      <div>
+        <ul className="footer--links">
+          <li><a href="#">{props.item1}</a></li>
+          <li><a href="#">{props.item2}</a></li>
+          <li><a href="#">{props.item3}</a></li>
+          <li><a href="#">{props.item4}</a></li>
+        </ul>
+      </div>
+    </div>
   )
 }
 
@@ -45,17 +69,61 @@ const Footer = () => {
         </div>
       </section>
       
-      <section className="footer-bottom">
-        <div>
-          <div>
-            
+      <section className="footer--bottom">
+        <div className="bottom--container">
+          <div className="footer--options">
+            <FooterOptions 
+              title = "Company"
+              item1 = "About Us"
+              item2 = "Team"
+              item3 = "Services"
+              item4 = "Blog"
+            />
+            <FooterOptions 
+              title = "Contact"
+              item1 = "Help & Support"
+              item2 = "Partner with us"
+            />
+            <FooterOptions 
+              title = "Legal"
+              item1 = "Terms & Conditions"
+              item2 = "Refund & Cancellation"
+              item3 = "Privacy Policy"
+              item4 = "Cookie Policy"
+            />
           </div>
 
-          <div>
-
+          <div className="contact-us">
+            <h4 className="contact--title">FOLLOW US</h4>
+            <div className="social">
+              <a href="#">
+                <img className="social--icons" src={Instagram} />
+              </a>
+              <a href="#">
+                <img className="social--icons" src={Facebook} />
+              </a>
+              <a href="#">
+                <img className="social--icons" src={Twitter} />
+              </a>
+            </div>
+            
+            <p className="offers">Receive exclusive offers in your mailbox</p>
+            <form className="mail-in" onSubmit="#">
+              <div className="form--input">
+                <img className="envelope" src={Envelope} />
+                <input type="text" id="lname" name="lname" placeholder="Enter your Email" />
+              </div>
+              <button className="mail-in--button" type='submit'>Subscribe</button>
+            </form>
           </div>
         </div>
       </section>
+      
+      <div className="copyright">
+        <p>All rights Reserved <span>&#169;</span> 
+        <span className="copyright--bold">HangoutPaddie, {currentYear}</span>
+        </p>
+      </div>
     </div>
   )
 }
