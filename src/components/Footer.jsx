@@ -1,5 +1,5 @@
 import Facebook from "../assets/facebook.svg"
-import Igram from "../assets/instagram.svg"
+import Igram from "../assets/1.svg"
 import Twitter from "../assets/twitter.svg"
 import Envelope from "../assets/envelope.svg"
 
