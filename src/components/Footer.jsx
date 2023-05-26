@@ -1,5 +1,5 @@
 import Facebook from "../assets/facebook.svg"
-import Instagram from "../assets/instagram.svg"
+// import Instagram from "../assets/instagram.svg"
 import Twitter from "../assets/twitter.svg"
 import Envelope from "../assets/envelope.svg"
 
