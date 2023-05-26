@@ -1,5 +1,5 @@
 import Facebook from "../assets/facebook.svg"
-// import Instagram from "../assets/instagram.svg"
+import Igram from "../assets/instagram.svg"
 import Twitter from "../assets/twitter.svg"
 import Envelope from "../assets/envelope.svg"
 
@@ -97,7 +97,7 @@ const Footer = () => {
             <h4 className="contact--title">FOLLOW US</h4>
             <div className="social">
               <a href="#">
-                {/* <img className="social--icons" src={Instagram} /> */}
+                <img className="social--icons" src={Igram} />
               </a>
               <a href="#">
                 <img className="social--icons" src={Facebook} />
