@@ -3,7 +3,8 @@ import ArrowButton from "./ArrowButton"
 import Cubana_Full from '../assets/Cubana_Full.png'
 import Sea_bar from '../assets/Sea-bar.png'
 import Hard_rock from '../assets/Hard-rock.png'
-// import ReviewImage from '../assets/Cubana_Full.png'
+import RightArrow from '../assets/ArrowRightOrange.svg'
+
 const ReviewCard = (props) => {
   return(
     <div className="review--card">
@@ -63,4 +64,21 @@ const ReviewDiv = () => {
   )
 }
 
-export {ReviewDiv}
+const Review = () => {
+  return (
+    <div className='reviews--main'>
+      <div className='reviews--top'>
+        <h3>Reviews</h3>
+        <a href='#'>
+          <div className='reviews--header'>
+            <p>View All</p>
+            <img src={RightArrow} />
+          </div>
+        </a>
+      </div>
+      <ReviewDiv />
+    </div>
+  )
+}
+
+export default Review
