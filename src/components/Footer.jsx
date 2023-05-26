@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Facebook from "../assets/facebook.svg"
 import Igram from "../assets/1.svg"
 import Twitter from "../assets/twitter.svg"

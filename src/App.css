@@ -54,6 +54,7 @@ body {
   align-items: center;
   padding: .8rem 1.3rem;
   transition: all ease-in-out .1s;
+  color: #000;
 }
 
 .nav--login:hover {
@@ -245,18 +246,15 @@ body {
 }
 
 .steps {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 90%;
   margin: 0 auto;
 }
 
 .step--cards {
-  width: 25%;
   margin: 3rem 0;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .step--icons {

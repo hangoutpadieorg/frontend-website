@@ -1,4 +1,3 @@
-// import React from 'react'
 import ArrowButton from "./ArrowButton"
 import Glass from "../assets/Glass.png"
 import Fries from "../assets/Chops.png"
