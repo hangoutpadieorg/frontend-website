@@ -97,7 +97,7 @@ const Footer = () => {
             <h4 className="contact--title">FOLLOW US</h4>
             <div className="social">
               <a href="#">
-                <img className="social--icons" src={Instagram} />
+                {/* <img className="social--icons" src={Instagram} /> */}
               </a>
               <a href="#">
                 <img className="social--icons" src={Facebook} />
