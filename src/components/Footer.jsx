@@ -1,7 +1,7 @@
-import facebook from "../assets/facebook.svg"
-import Instagram from "../assets/Instagram.svg"
-import Twitter from "../assets/Twitter.svg"
-import Envelope from "../assets/Envelope.svg"
+import Facebook from "../assets/facebook.svg"
+import Instagram from "../assets/instagram.svg"
+import Twitter from "../assets/twitter.svg"
+import Envelope from "../assets/envelope.svg"
 
 let getDate = new Date();
 let currentYear = getDate.getFullYear();
@@ -100,7 +100,7 @@ const Footer = () => {
                 <img className="social--icons" src={Instagram} />
               </a>
               <a href="#">
-                <img className="social--icons" src={facebook} />
+                <img className="social--icons" src={Facebook} />
               </a>
               <a href="#">
                 <img className="social--icons" src={Twitter} />
