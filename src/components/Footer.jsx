@@ -1,6 +1,6 @@
-import facebook from "../assets/facebook.svg"
-import instagram from "../assets/instagram.svg"
-import twitter from "../assets/twitter.svg"
+import Facebook from "../assets/facebook.svg"
+import Instagram from "../assets/instagram.svg"
+import Twitter from "../assets/twitter.svg"
 import Envelope from "../assets/envelope.svg"
 
 let getDate = new Date();
@@ -97,13 +97,13 @@ const Footer = () => {
             <h4 className="contact--title">FOLLOW US</h4>
             <div className="social">
               <a href="#">
-                <img className="social--icons" src={instagram} />
+                <img className="social--icons" src={Instagram} />
               </a>
               <a href="#">
-                <img className="social--icons" src={facebook} />
+                <img className="social--icons" src={Facebook} />
               </a>
               <a href="#">
-                <img className="social--icons" src={twitter} />
+                <img className="social--icons" src={Twitter} />
               </a>
             </div>
             
