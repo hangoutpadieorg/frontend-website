@@ -1,4 +1,4 @@
-import Facebook from "../assets/Facebook.svg"
+import facebook from "../assets/facebook.svg"
 import Instagram from "../assets/Instagram.svg"
 import Twitter from "../assets/Twitter.svg"
 import Envelope from "../assets/Envelope.svg"
@@ -100,7 +100,7 @@ const Footer = () => {
                 <img className="social--icons" src={Instagram} />
               </a>
               <a href="#">
-                <img className="social--icons" src={Facebook} />
+                <img className="social--icons" src={facebook} />
               </a>
               <a href="#">
                 <img className="social--icons" src={Twitter} />
