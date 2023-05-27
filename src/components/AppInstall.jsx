@@ -6,8 +6,9 @@ import Apple from '../assets/apple-logo.svg'
 
 const Install = () => {
   return (
-    <div className="xamp">
+    <div className="vector--container">
       <div className="vector--main">
+        <div className='color--adjust'></div>
         <img className='vector' src={Vector} />
         <div className='vector--absolute'>
           <img className='phone' src={Phone} />
@@ -19,11 +20,13 @@ const Install = () => {
                 icon = {Play}
                 action = "GET IT ON"
                 store = "Google Play"
+                link = '#'
               />
               <InstallButton 
                 icon = {Apple}
                 action = "DOWNLOAD FROM THE "
                 store = "App Store"
+                link = '#'
               />
             </div>
           </div>
@@ -35,7 +38,7 @@ const Install = () => {
 
 const InstallButton = (props) => {
   return (
-    <a href='#'>
+    <a href={props.link}>
       <button className='install--btn'>
         <img className='play--icon' src={props.icon} />
         <div>

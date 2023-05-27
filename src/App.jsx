@@ -8,7 +8,6 @@ import Category from './components/Categories'
 import Review from './components/ReviewCard'
 
 export default function App() {
-
   return (
     <div>
       <Navbar />

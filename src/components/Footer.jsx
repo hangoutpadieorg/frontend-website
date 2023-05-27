@@ -3,12 +3,13 @@ import Facebook from "../assets/facebook.svg"
 import Igram from "../assets/1.svg"
 import Twitter from "../assets/twitter.svg"
 import Envelope from "../assets/envelope.svg"
+import cities from "./cities"
 
 let getDate = new Date();
 let currentYear = getDate.getFullYear();
 // console.log(currentYear);
 
-const Cities = (props) => {
+const CityList = (props) => {
   return (
     <ul className="city--list">
       <li>{props.city1}</li>
@@ -19,6 +20,19 @@ const Cities = (props) => {
     </ul>
   )
 }
+
+const Cities = cities.map(cityMap => {
+  return (
+    <CityList 
+      key = {cityMap.id}
+      city1 = {cityMap.city1}
+      city2 = {cityMap.city2}
+      city3 = {cityMap.city3}
+      city4 = {cityMap.city4}
+      city5 = {cityMap.city5}
+    />
+  )
+})
 
 const FooterOptions = (props) => {
   return (
@@ -42,31 +56,7 @@ const Footer = () => {
       <section className="footer--top">
         <h3 className="top--cities">Our top cities</h3>
         <div className="cities">
-          <Cities 
-            city1 = "Abuja" city2 = "Lafia"
-            city3 = "Lokoja" city4 = "Minna"
-            city5 = "Ilorin"
-          />
-          <Cities 
-            city1 = "Lagos" city2 = "Ibadan"
-            city3 = "Akure" city4 = "Oshogbo"
-            city5 = "Abeokuta"
-          />
-          <Cities 
-            city1 = "Port Harcourt" city2 = "Asaba"
-            city3 = "Benin" city4 = "Bayelsa"
-            city5 = "Uyo"
-          />
-          <Cities 
-            city1 = "Calabar" city2 = "Enugu"
-            city3 = "Abia" city4 = "Awka"
-            city5 = "Owerri"
-          />
-          <Cities 
-            city1 = "Keffi" city2 = "Bauchi"
-            city3 = "Kano" city4 = "Kaduna"
-            city5 = "Kebbi"
-          />
+          {Cities}
         </div>
       </section>
       
@@ -112,7 +102,7 @@ const Footer = () => {
             <form className="mail-in" onSubmit="#">
               <div className="form--input">
                 <img className="envelope" src={Envelope} />
-                <input type="text" id="lname" name="lname" placeholder="Enter your Email" />
+                <input type="email" id="lname" name="lname" placeholder="Enter your Email" />
               </div>
               <button className="mail-in--button" type='submit'>Subscribe</button>
             </form>
