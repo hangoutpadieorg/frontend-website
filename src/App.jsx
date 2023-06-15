@@ -1,23 +1,21 @@
-import Navbar from './components/Nav'
-import Hero from './components/Hero'
-import Steps from './components/Steps'
-import Install from './components/AppInstall'
-import HangoutCTA from './components/Hangout-CTA'
-import Footer from './components/Footer'
-import Category from './components/Categories'
-import Review from './components/ReviewCard'
+// import React from "react";
+import {BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import Login from "./pages/Login"
+import ResetPassword from "./pages/ResetPassword"
+import Signup from "./pages/Signup"
 
 export default function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Steps />
-      <Category />
-      <Install />
-      <Review />
-      <HangoutCTA />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <Route index element = {<Home />} />
+          <Route path="login" element = {<Login />} />
+          <Route path="resetPassword" element = {<ResetPassword />} />
+          <Route path="signup" element = {<Signup />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }

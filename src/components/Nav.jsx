@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import '../App.css'
 import Logo from '../assets/hangout-logo.svg'
 import User from '../assets/user.svg'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -17,6 +19,7 @@ const Navbar = () => {
               btnText = "Signup"
               user = "Signup as user"
               vendor = "Signup as vendor"
+              link = '/login'
             />
             <NavButton 
               img = {User}
@@ -38,8 +41,8 @@ const NavButton = (props) => {
       <p>{props.btnText}</p>
 
       <div className='nav--login--hidden' id='xx'>
-        <a href='#'><p className='nav--login--user'>{props.user}</p></a>
-        <a href='#'><p className='nav--login--vendor'>{props.vendor}</p></a>
+        <Link to={props.link}><p className='nav--login--user'>{props.user}</p></Link>
+        <Link to={props.link}><p className='nav--login--vendor'>{props.vendor}</p></Link>
       </div>
     </div>
   )
