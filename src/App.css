@@ -713,12 +713,17 @@ body {
 
 /* Sign up form */
 
-.login--main {
+.login--main,
+.reset--main {
   width: 100%;
-  margin: 0 auto;
   background: #424242;
   min-height: 100vh;
   color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .login--logo {
@@ -728,19 +733,19 @@ body {
 
 .header--text {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-top: 4rem;
 }
 
 .login--form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 2rem;
 }
 
 .input--container {
-  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input--label {
@@ -846,6 +851,50 @@ body {
   color: #d0d0d7;
   font-weight: 600;
   font-size: .8rem;
+}
+
+.form--nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.reset--form {
+  margin-top: 4rem;
+}
+
+.Reset--BTN {
+  width: 20rem;
+  height: 2.5rem;
+  margin: 0 auto;
+  background: #ff5403;
+  border: none;
+  border-radius: .3rem;
+  outline: none;
+  color: #fff;
+  margin: 2rem 0 0 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Raleway";
+}
+
+.back-to-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .1rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 3rem 0 0 0;
+}
+
+.back-to-login:hover {
+  text-decoration: underline;
+}
+
+.longArrow {
+  height: 1rem;
 }
 
 /* End of signup */

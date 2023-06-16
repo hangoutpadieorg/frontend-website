@@ -19,13 +19,14 @@ const Navbar = () => {
               btnText = "Signup"
               user = "Signup as user"
               vendor = "Signup as vendor"
-              link = '/login'
+              link = '/signup'
             />
             <NavButton 
               img = {User}
               btnText = "Login"
               user = "Login as user"
               vendor = "Login as vendor"
+              link = '/login'
             />
           </ul>
         </div>

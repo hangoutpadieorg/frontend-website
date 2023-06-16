@@ -1,7 +1,7 @@
 import RightArrow from '../assets/ArrowRight.svg'
 /* eslint-disable react/prop-types */
 
-export default function ArrowButton(props) {
+function ArrowButton(props) {
   return (
     <a href='#'>
       <button className='btn'>
@@ -10,3 +10,5 @@ export default function ArrowButton(props) {
     </a>
   )
 }
+
+export default ArrowButton

@@ -1,8 +1,10 @@
+// import InputField from "../pages/Login"
+import {InputField, LogInBTN, AltSignIn} from "../components/FormComponents"
 
 const Signup = () => {
   return (
     <div>
-      <p>Signup</p>
+      <h1>Signup</h1>
     </div>
   )
 }
