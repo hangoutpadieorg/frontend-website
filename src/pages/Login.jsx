@@ -12,7 +12,7 @@ const Login = () => {
 
       <section>
         <h2 className='header--text'>Welcome Back</h2>
-        <div className='login--form'>
+        <form name="login" action="#" method="POST" className='login--form'>
           <InputField 
             label = "Email Address"
             type = "email"
@@ -28,12 +28,12 @@ const Login = () => {
           <AltSignIn text = "Log in with Google" img = {Google} />
           <AltSignIn text = "Log in with Apple" img = {darkApple} />
           <div className='signup--container'>
-            <p className='no-account--CTA'>Don't have an account?</p>
+            <p className='no-account--CTA'>Don&apos;t have an account?</p>
             <Link to="/signup">
               <p className='signup--BTN'>Sign Up</p>
             </Link>
           </div>
-        </div>
+        </form>
       </section>
     </div>
   )

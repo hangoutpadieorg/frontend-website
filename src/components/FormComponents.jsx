@@ -29,7 +29,7 @@ const InputField = (props) => {
 const LogInBTN = (props) => {
   return (
     <div className='BTN--div'>
-      <button className={props.className}>{props.text}</button>
+      <button onClick="Test()" className={props.className}>{props.text}</button>
     </div>
   )
 }
@@ -38,13 +38,21 @@ const AltSignIn = (props) =>{
   return (
     <div className='sign-in--external'>
       <a href="#">
-        <button>
+        <button className='login-button'>
           {props.text}
           <img className='service--icons' src={props.img} />
         </button>
       </a>
     </div>
   )
+}
+
+// addEventListener(click, () => {
+//   prompt("Hello")
+// })
+
+function Test(){
+  prompt("Hello")
 }
 
 export {InputField, LogInBTN, AltSignIn, FormHeader}

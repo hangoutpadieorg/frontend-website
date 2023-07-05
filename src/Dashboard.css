@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: 'Roboto';
+  border-bottom: .15rem solid #f2f2f2;
+}
+
+.user--img {
+  height: 1.2rem;
+}
+
+.active--badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: .5rem;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  border-right: .1rem solid #f2f2f2;
+  padding: 4rem 2rem 0 2rem;
+}
+
+.main-section {
+  flex: 1;
+  margin-left: 250px; /* Set the same width as sidebar */
+  padding: 20px; /* Adjust the padding as per your requirements */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  background: #f2f2f2;
+}
+
+.sidebar--button {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .8rem;
+  font-weight: 600;
+  font-family: 'Raleway';
+  padding: 1rem;
+  margin: .5rem 0;
+  width: 100%;
+  border-radius: .6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sidebar--icons {
+  height: 1rem;
+}
