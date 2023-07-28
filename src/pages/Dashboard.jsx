@@ -19,7 +19,13 @@ const Dashboard = () => {
         </div>
         <div className="main-section" id="mainSection">
           {/* Main section content */}
-          <p>Dashboard</p>
+          <p>Your Dashboard</p>
+          <div>
+            <p>Hangout Centers</p>
+            <div>
+              
+            </div>
+          </div>
         </div>
       </div>
     </div>
